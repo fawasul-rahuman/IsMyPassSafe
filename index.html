@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<title>IsMyPassSafe</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<img src="images/bg.png" alt="GIF" id="hero-gif">
+		<section id="header">
+			<nav>
+				<a href="index.html" class="logo">
+					<img src="images/Logo.png" alt="Logo">
+				</a>
+				<a href="#header" class="home">Home</a>
+				<a href="#features" class="features">Features</a>
+				<a href="#how-it-works" class="how-it-works">How It Works</a>
+				<a href="#faqs" class="faqs">FAQs</a>
+				<a href="#main" class="btn">Check My Password</a>
+			</nav>
+			<section class="hero">
+				<h1>Keep Your Passw*rds<br/><i>Safe and Secure</i></h1>
+				<p>Stop guessing. Start securing. Instantly test and upgrade your passwords.</p>
+				<a href="#main" class="btn">Check My Password</a>
+			</section>
+		</section>
+		<hr class="line" />
+		<section id="features" class="margin-content">
+			<h2>Features</h2>
+			<p>We don’t guess if your password’s safe — we prove it.</p>
+			<div class="content">
+				<div class="flex-container">
+					<div class="container">
+						<h3>Smart Strength Checker</h3>
+						<p>We analyze the real strength of your password using deep logic, not vibes. Weak ones get roasted.</p>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="container">
+						<h3>Hack Time Estimator</h3>
+						<p>We tell you how fast a hacker could crack your password. If it's under a second, yeah… that's your cue to panic and fix it.</p>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="container">
+						<h3>Breach Monitor</h3>
+						<p>Your password’s been leaked? We’ll let you know before it ruins your week. Real-time breach scans, zero sugar-coating.</p>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="container">
+						<h3>Secure Generator</h3>
+						<p>Need a password that doesn’t suck? One click. Boom. Impossible to guess, forgettable by design.</p>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="container">
+						<h3>Password Report Card</h3>
+						<p>Every password gets a grade. The A’s stay. Get smarter with every audit—no cybersecurity PhD required.</p>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="container">
+						<h3>Privacy-First, Always</h3>
+						<p>No data hoarding, no creepy tracking. Your info stays yours. Period. Because we actually practice what others preach.</p>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<hr class="line" />
+		<section id="how-it-works" class="margin-content">
+			<h2>How It Works</h2>
+			<p>Simple steps, powerful protection.</p>
+			<div class="steps">
+				<div class="step"><span class="num">1</span> Enter or Generate a Password</div>
+				<div class="step"><span class="num">2</span> Check Password Strength</div>
+				<div class="step"><span class="num">3</span> Breach Check with Global Databases</div>
+				<div class="step"><span class="num">4</span> Get Instant Feedback</div>
+			</div>
+		</section>
+		<hr class="line" />
+		<section id="main" class="margin-content">
+			<h2>Password Strength<br>Testing Tool</h2>
+			<p>Think you have a strong password? Find out below.</p>
+			<div id="pass">
+				<input type="text" id="passwordInput" placeholder="Enter your password" />
+				<button onclick="generatePassword()">↻</button>
+			</div>
+			<div id="strengthBar">
+				<div id="strengthFill"></div>
+			</div>
+			<div class="results">
+				<p><strong>Your password strength:</strong> <span id="strengthText">-</span></p>
+				<p><strong>Estimated time to crack:</strong> <span id="crackTime">-</span></p>
+			</div>
+			<div class="suggestions-section">
+				<h4>Tips for a Strong Password</h4>
+				<ul>
+					<li>Use at least 12 characters</li>
+					<li>Include uppercase & lowercase letters</li>
+					<li>Mix in numbers and symbols</li>
+					<li>Avoid dictionary words or patterns</li>
+				</ul>
+			</div>
+			<div class="copy-message" id="copyMessage">
+				<ul class="notification-container">
+					<li class="notification-item success">
+					  <div class="notification-content">
+						<div class="notification-icon">
+						  <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+							<path
+							  stroke="currentColor"
+							  stroke-linecap="round"
+							  stroke-linejoin="round"
+							  stroke-width="2"
+							  d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+							></path>
+						  </svg>
+						</div>
+						<div class="notification-text">Copied</div>
+					</div>
+					<div class="notification-progress-bar"></div>
+					</li>
+				</ul>				  
+			</div>
+		</section>
+		<hr class="line" />
+		<section id="why-it-matters">
+			<h2>Why It Matters</h2>
+			<p>Got questions? We’ve got real answers. No corporate mumbo jumbo.</p>
+		</section>
+		<hr class="line" />
+		<section id="faqs" class="margin-content">
+			<h2>Frequently Asked Questions</h2>
+			<p>"81% of breaches are due to weak or reused passwords. Don’t be a statistic." We help you build strong habits, one password at a time.</p>
+			<div class="flex-container">
+				<div class="container">
+					<div class="question">
+						<h3>Do you store my password?</h3>
+						<img src="images/arrow-down-sign-to-navigate.png" alt="Arow" class="arrow-icon">
+					</div>
+					<div class="answer">
+						<p>Absolutely not.<br />We don’t save, log, or peek at what you type.<br />Everything runs locally or through encrypted, one-way processes.<br />Your secrets stay secret.</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="question">
+						<h3>How do you check for breaches?</h3>
+						<img src="images/arrow-down-sign-to-navigate.png" alt="Arow" class="arrow-icon">
+					</div>
+					<div class="answer">
+						<p>We scan a massive database of leaked passwords.<br />If yours is in there, we’ll let you know.<br />No drama, just facts.</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="question">
+						<h3>Can I trust your results?</h3>
+						<img src="images/arrow-down-sign-to-navigate.png" alt="Arow" class="arrow-icon">
+					</div>
+					<div class="answer">
+						<p>We use industry-standard algorithms and data.<br />Our results are as reliable as it gets.<br />But remember, no tool is perfect. Always stay vigilant.</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="question">
+						<h3>What if I forget my password?</h3>
+						<img src="images/arrow-down-sign-to-navigate.png" alt="Arow" class="arrow-icon">
+					</div>
+					<div class="answer">
+						<p>We can’t help you there.<br />Use a password manager or write it down (safely!).<br />Just don’t use the same one everywhere.</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="question">
+						<h3>Is this really free?</h3>
+						<img src="images/arrow-down-sign-to-navigate.png" alt="Arow" class="arrow-icon">
+					</div>
+					<div class="answer">
+						<p>Yep!<br />No hidden fees, no upsells.<br />Just a tool to help you stay safe.</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="question">
+						<h3>How do I contact you?</h3>
+						<img src="images/arrow-down-sign-to-navigate.png" alt="Arow" class="arrow-icon">
+					</div>
+					<div class="answer">
+						<p>Got feedback? We’re all ears!<br />Shoot us an email at <a href="mailto:ismypasssafe@gmail.com">ismypasssafe@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="question">
+						<h3>Can I use this on my phone?</h3>
+						<img src="images/arrow-down-sign-to-navigate.png" alt="Arow" class="arrow-icon">
+					</div>
+					<div class="answer">
+						<p>Absolutely!<br />Our tool works on any device with a browser.<br />Stay safe, no matter where you are.</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="question">
+						<h3>What if I have more questions?</h3>
+						<img src="images/arrow-down-sign-to-navigate.png" alt="Arow" class="arrow-icon">
+					</div>
+					<div class="answer">
+						<p>We’re here to help!<br />Reach out anytime at <a href="mailto:ismypasssafe@gmail.com">ismypasssafe@gmail.com</a><br />We’ll get back to you ASAP.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr class="line" />
+		<section id="footer">
+			<p>© 2025 IsMyPassSafe. All Rights Reserved. A <a href="#">IsMyPassSafe</a> original</p>
+		</section>
+		<script src="js/index.js"></script>
+  </body>
+</html>
